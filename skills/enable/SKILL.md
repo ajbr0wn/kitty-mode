@@ -1,6 +1,6 @@
 ---
 name: enable
-description: Turn on kitty-mode — install the walking-cat statusline into ~/.claude/settings.json, backing up any existing statusLine.
+description: Turn on kitty-mode. Installs the walking-cat statusline into ~/.claude/settings.json, backing up any existing statusLine.
 allowed-tools: [Read, Write, Edit, Bash]
 ---
 
@@ -32,7 +32,7 @@ Read `~/.claude/settings.json`. If it doesn't exist, you'll be creating it.
 
 Parse the JSON, then:
 
-- If the file has an existing `statusLine` field that is NOT already the kitty-mode one, copy it to `_kitty_mode_previous_statusLine` so disable can restore it. Do NOT overwrite an existing `_kitty_mode_previous_statusLine` (the user may have run enable twice — the first backup is the real one).
+- If the file has an existing `statusLine` field that is NOT already the kitty-mode one, copy it to `_kitty_mode_previous_statusLine` so disable can restore it. Do NOT overwrite an existing `_kitty_mode_previous_statusLine` (the user may have run enable twice, in which case the first backup is the real one).
 - Set `statusLine` to:
   ```json
   {
@@ -44,9 +44,9 @@ Parse the JSON, then:
   ```
 - Write the file back with pretty-printed JSON (2-space indent) to keep it readable.
 
-Use the Read tool then the Write tool — do not use `jq`, since it may not be installed and the user's settings may have comments or unusual formatting you should preserve carefully.
+Use the Read tool then the Write tool. Do not use `jq`, since it may not be installed and the user's settings may have comments or unusual formatting you should preserve carefully.
 
-If you encounter JSON parse errors on the existing settings, STOP and tell the user to fix the file manually — do not clobber their settings.
+If you encounter JSON parse errors on the existing settings, STOP and tell the user to fix the file manually. Do not clobber their settings.
 
 ### 4. Confirm to the user
 

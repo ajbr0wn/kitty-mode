@@ -1,5 +1,5 @@
 {
-  "description": "kitty-mode — ambient companion cat for Claude Code",
+  "description": "kitty-mode: ambient companion cat for Claude Code",
   "hooks": {
     "SessionStart": [
       {

@@ -16,7 +16,7 @@ Read `~/.claude/settings.json`.
 
 - If there's no `statusLine` field: report "kitty-mode is not enabled. Run `/kitty-mode:enable` to turn it on."
 - If `statusLine.command` points at `~/.claude/kitty-mode/statusline.sh` (or contains `kitty-mode/statusline.sh`): report "kitty-mode is enabled 🐈".
-- Otherwise: report "A different statusLine is active — kitty-mode is not installed. `/kitty-mode:enable` will back up the current statusLine before installing."
+- Otherwise: report "A different statusLine is active. kitty-mode is not installed. `/kitty-mode:enable` will back up the current statusLine before installing."
 
 ### 2. Show a preview (optional but nice)
 

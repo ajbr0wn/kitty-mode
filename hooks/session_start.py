@@ -46,7 +46,7 @@ def sync_statusline() -> None:
             shutil.copy2(src, dest)
             dest.chmod(0o755)
     except Exception:
-        # Non-fatal — the hook should never block a session start.
+        # Non-fatal: the hook should never block a session start.
         pass
 
 
@@ -61,7 +61,7 @@ def main() -> int:
     message = random.choice(FLAVORS)
     context = (
         f"kitty-mode is active. {message} "
-        "(This is a cosmetic plugin — feel free to acknowledge the cat if it "
+        "(This is a cosmetic plugin. Feel free to acknowledge the cat if it "
         "comes up naturally, but don't force it.)"
     )
 

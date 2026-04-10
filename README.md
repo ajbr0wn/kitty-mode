@@ -30,9 +30,9 @@ The cat will appear in the status bar on the next assistant response. Use `/kitt
 
 ## Slash commands
 
-- `/kitty-mode:enable` — installs the statusline, backs up any existing one
-- `/kitty-mode:disable` — restores your previous statusline
-- `/kitty-mode:status` — shows whether it's active, with a preview
+- `/kitty-mode:enable`: installs the statusline, backs up any existing one
+- `/kitty-mode:disable`: restores your previous statusline
+- `/kitty-mode:status`: shows whether it's active, with a preview
 
 ## Requirements
 

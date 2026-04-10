@@ -1,6 +1,6 @@
 ---
 name: disable
-description: Turn off kitty-mode — remove the walking-cat statusline and restore any previous statusLine.
+description: Turn off kitty-mode. Removes the walking-cat statusline and restores any previous statusLine.
 allowed-tools: [Read, Write, Edit, Bash]
 ---
 
@@ -22,9 +22,9 @@ Parse the JSON:
 - Otherwise, just delete the `statusLine` key entirely.
 - Write the file back with pretty-printed JSON (2-space indent).
 
-Use the Read + Write tools directly — don't shell out to `jq`.
+Use the Read + Write tools directly. Don't shell out to `jq`.
 
-If you encounter JSON parse errors on the existing settings, STOP and tell the user to fix the file manually — do not clobber their settings.
+If you encounter JSON parse errors on the existing settings, STOP and tell the user to fix the file manually. Do not clobber their settings.
 
 ### 3. Confirm to the user
 
