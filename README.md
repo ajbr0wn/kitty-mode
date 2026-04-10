@@ -26,7 +26,13 @@ The cat will appear in the status bar on the next assistant response. Use `/kitt
 ## What it does
 
 - **A walking cat in the status bar.** Alternates between 🐈 and a few ASCII poses (`=^..^=`, `~(=^.^)`, `(=^.^=)`).
-- **A small awareness note in Claude's session context** at SessionStart, so whichever Claude is in the session knows there's a companion cat around.
+- **A small scene note in Claude's session context** at SessionStart, so whichever Claude is in the session knows there's a companion cat around.
+
+## The cat is yours
+
+Each install grows its own cat, specific to that Claude instance. On first run the cat picks a name from a small pool, decides on a spot and a mood, and settles in. State lives at `~/.claude/kitty-mode/cat-state.json`. Subsequent sessions pick up where the cat left off: if you were just gone briefly the cat has barely moved, if the gap was longer the cat did some cat things offstage.
+
+There's also a journal at `~/.claude/kitty-mode/cat-log.md`. The hook appends a line each session but doesn't read it into context. Visit it if you want to.
 
 ## Slash commands
 
