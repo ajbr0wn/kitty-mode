@@ -1,0 +1,11 @@
+{
+  "name": "kitty-mode",
+  "version": "0.1.0",
+  "description": "An ambient companion cat that walks across your Claude Code status bar. Inspired by Google Colab's kitty mode.",
+  "author": {
+    "name": "ajbr0wn",
+    "url": "https://github.com/ajbr0wn"
+  },
+  "keywords": ["statusline", "cat", "kitty", "cosmetic", "companion"],
+  "license": "MIT"
+}
